@@ -1,12 +1,92 @@
+body {
+    background-image: url("https://c.pxhere.com/photos/b0/eb/desk_workspace_camera_computer_ipad-13595.jpg!d");
+    background-size: cover;
+    background-position: top;
+  }
+  
+  .pending-box {
+    padding-top: 30px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal, bold;
+    color: whitesmoke;
+  }
 
-/* 
+  h1 {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal, bold;
+    color: whitesmoke;
+  }
+  
+  .delete-box {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal, bold;
+    color: whitesmoke;
+    width: 200px;
+  }
 
-    You can write your own styles here...
+  .fa-plus {
+    font-size: 30px;
+    padding-left: 10px;
+    color: whitesmoke;
+  }
+  
+  .list-box {
+    height: 600px;
+    width: 400px;
+    font-size: 24px;
+    background-image: url("https://img.freepik.com/free-vector/flat-design-blue-lined-paper-background_23-2151093965.jpg?t=st=1731605441~exp=1731609041~hmac=1b0af3f22d0188f4f2c507a9f589a1df78aeeae3b3669e57f0879e68d2ea4710&w=1060");
+    background-size: cover;
+    background-position: center;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal, bold;
+    opacity: 95%;
+    filter: contrast(95%);
+    filter: blur(0.5px); 
+  
+  }
+  
+  
+  .list-box ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .list-box li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5px 0;
+  
+  }
+  
+  .list-box li i {
+    font-size: 1rem;
+  }
+  
+  .list-box li:not(:last-child) {
+    margin-bottom: 1px;
+  }
+  
+  
+  .list-box li p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .fa-trash {
+    display: none;
     
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+  }
+  .list-box li:hover .fa-trash {
+    display:inline;
+    padding-bottom: 5px;
+  }
