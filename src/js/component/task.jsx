@@ -58,16 +58,12 @@ export const Task = () => {
 
   
  
-    const deleteAllTasks = async() => {
-   
-      const deleteAll = values.map(item => deleteTask(item.id));
-      const responses = await Promise.all(deleteAll);
-      responses.forEach(() => setValues([]))
-    };
-    
-  //  const deleteAll = values.filter(deleteTask => deleteTask.id !== id);
-  //   await Promise.all(deleteAll).then(() => setValues ([]));
-  // };
+     const deleteAllTasks = async () => {
+    const deleteAll = values.map(item => fetch(`https://playground.4geeks.com/todo/todos/${item.id}`, {
+      method: 'DELETE'
+    }));
+    await Promise.all(deleteAll).then(() => setValues([]));
+  };
   
   const toggleCompletion = (index) => {
     setValues((previous) =>
